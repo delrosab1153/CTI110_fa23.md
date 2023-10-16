@@ -66,7 +66,7 @@ while employee != 'Done':
   
   # 5. Overtime, calculation; second list append
   overtime = hours_worked_week - 40 if hours_worked_week > 40 else 0  
-  overtime_pay = overtime * pay_rate if hours_worked_week > 40 else 0  
+  overtime_pay = overtime * pay_rate * 1.5 if hours_worked_week > 40 else 0  
   total_overtime_pay.append(overtime_pay)
   
   # 6. Regular hours worked, calculation; third list append
